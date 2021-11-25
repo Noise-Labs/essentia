@@ -89,13 +89,13 @@ void RogueVector<T>::setSize(size_t size) {
 
 template <typename T>
 void RogueVector<T>::setData(T* data) {
-  this->_Myfirst() = data;
+    auto dataPtr = this->data();
+    memcpy(dataPtr, data, sizeof(T));
 }
 
 template <typename T>
 void RogueVector<T>::setSize(size_t size) {
-  this->_Mylast() = this->_Myfirst() + size;
-  this->_Myend() = this->_Myfirst() + size;
+    this->resize(size);
 }
 
 #endif

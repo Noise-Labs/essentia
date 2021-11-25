@@ -21,7 +21,7 @@
 #define ESSENTIA_CUBIC_SPLINE_H
 
 #include "algorithm.h"
-#include "splineutil.h"
+#include "spline/splineutil.h"
 
 namespace essentia {
 namespace standard {

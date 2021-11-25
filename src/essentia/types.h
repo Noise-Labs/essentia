@@ -115,6 +115,7 @@ inline bool case_insensitive_char_cmp(char a, char b) {
 /**
  * Function object for comparing two strings in a case-insensitive manner.
  */
+ /*
 struct case_insensitive_str_cmp
   : public std::binary_function<const std::string&, const std::string&, bool> {
   bool operator()(const std::string& str1, const std::string& str2) const {
@@ -123,7 +124,7 @@ struct case_insensitive_str_cmp
                                         case_insensitive_char_cmp);
   }
 };
-
+*/
 
 template <class T>
 class OrderedMap : public std::vector<std::pair<std::string, T*> > {

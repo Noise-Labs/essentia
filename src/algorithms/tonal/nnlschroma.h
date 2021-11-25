@@ -21,7 +21,7 @@
 #define ESSENTIA_NNLSCHROMA_H
 
 #include "algorithm.h"
-#include "nnls.h"
+#include "nnls/nnls.h"
 
 namespace essentia {
 namespace standard {
